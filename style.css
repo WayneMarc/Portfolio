@@ -21,7 +21,8 @@ padding: 0%;}
 
 }
 .landingpageImage{
-    opacity: 0.5;
+    
+    
     
     
 }
@@ -29,9 +30,102 @@ padding: 0%;}
         
     text-align: center;
     padding-top: 6%;
+    margin-top: -50%;
+    opacity: 1;
+    color: rgb(44, 44, 4);
+    font-weight: bold;
+    padding-left: 180px;
+    letter-spacing: 5%;
+    line-height: 150%;
+    font-size: 250%;
+    position: relative;
 
 }
-.body {
-    background-color: #edf1ed;
-    text-align: center;
+.aboutMe{
+   margin-top: 35%;
+   
+   
+   
 }
+.h2heading {
+    font-size: 250%;
+    padding-left: 40%;
+}
+.rightContainerPic {
+    float: left;
+    background-color: white;
+    min-width: 50%;
+    min-height: 600px;
+    margin-top: -1%;
+    
+}
+.actualPic{
+    padding-left: 13%;
+}
+.Writing {
+    float: right;
+    background-color: #edf1ed;
+    padding-top: 8%;
+    min-width: 50%;
+    max-width: 50%;
+    min-height: 600px;
+    margin-top: -6%;
+    position:static;
+    
+}
+.aboutPara {
+    font-size: 1.3em;
+    width: 80%;
+    padding-left: 10%;
+}
+.portfolioWrapper {
+    
+    font-family: 'Times New Roman', Times, serif;
+    max-height: 700px;
+    margin-top: 5%;
+    padding: 10%;
+    text-align: center;
+    font-size: 1em;
+}
+.body {
+    background-color: #edf1ed; 
+}
+.buttonPortfolio {
+    background: #3D94F6;
+    background-image: -webkit-linear-gradient(top, #3D94F6, #1E62D0);
+    background-image: -moz-linear-gradient(top, #3D94F6, #1E62D0);
+    background-image: -ms-linear-gradient(top, #3D94F6, #1E62D0);
+    background-image: -o-linear-gradient(top, #3D94F6, #1E62D0);
+    background-image: -webkit-gradient(to bottom, #3D94F6, #1E62D0);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    color: #FFFFFF;
+    font-family: Arial;
+    font-size: 1em;
+    font-weight: 900;
+    padding: 1%;
+    -webkit-box-shadow: 1px 1px 20px 0 #000000;
+    -moz-box-shadow: 1px 1px 20px 0 #000000;
+    box-shadow: 1px 1px 20px 0 #000000;
+    text-shadow: 1px 1px 20px #000000;
+    border: solid #337FED 1px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+ }
+ 
+ .buttonPortfolio:hover {
+    border: solid #337FED 1px;
+    background: #1E62D0;
+    background-image: -webkit-linear-gradient(top, #1E62D0, #3D94F6);
+    background-image: -moz-linear-gradient(top, #1E62D0, #3D94F6);
+    background-image: -ms-linear-gradient(top, #1E62D0, #3D94F6);
+    background-image: -o-linear-gradient(top, #1E62D0, #3D94F6);
+    background-image: -webkit-gradient(to bottom, #1E62D0, #3D94F6);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    text-decoration: none;
+ }
