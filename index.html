@@ -3,6 +3,10 @@
 <head>
    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">-->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="slider.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
 </head>
     <div class="navwrapper">
         <a href="index.html" class="navbuttons">HOME</a>
@@ -38,21 +42,63 @@
         </div>
     </div>
     <div class="portfolioWrapper">
-        <h1>Portfolio </h1>
-    
-        <p>Here is a list of the projects I have been completing over the last few months</p>
-        <br>
-        <ul class="list" style="list-style-type:none;">
-        <li><a href="nodefruitmachine.html"> Node.js Fruit Machine</li></a>
-        <p>Node Fruit Machine was my first project and this involved JavaScript, Node JS and HTML</p>
-        <li><a href=fastfood.html> Food Ordering System</li></a>
-        <p>This project is a fully functioning Website where you can place an order and keep track of said order</p>
-        <li><a href="htmlfruitmachine.html">HTML Fruit Machines</li></a>
-        <p>similar to the Node project but this was done with JavaScript, CSS and HTML, if you see the following link you will be able to play this game</p>
-        <li><a href="rpgtextbasedgame.html">RPG Text Based Game</li></a>
-        <p>This was a personal project of mine which i used JavaScript, HTML and CSS where I have used multiple arrays to take you on an adventure where you decide the outcome</p>
-
-        </ul>
+        <h1>Portfolio</h1>
+        <div class="slider owl-carousel">
+            <div class="card">
+              <div class="img">
+      <img src="images/generic fruit machine image.png" alt=""></div>
+      <div class="content">
+                <div class="title">
+      HTML Fruit Machine</div>
+      <div class="sub-title">
+      HTML, CSS and JavaScript</div>
+      <p>
+      In this Project I utilised HTML CSS and Javascript, to make a fully functioning Fruit Machine </p>
+      <div class="btn">
+                  <button>Play Game</button>
+                </div>
+      </div>
+      </div>
+      <div class="card">
+              <div class="img">
+      <img src="images/GenericcarImage.jpg" alt=""></div>
+      <div class="content">
+                <div class="title">
+      Car Sales Website</div>
+      <div class="sub-title">
+      HTML, CSS and JavaScript</div>
+      <p>
+      In this project I used HTML, CSS and JavaScript, with an emphasis on JavaScript as code was used for search and filtering</p>
+      <div class="btn">
+                  <button>View Site</button>
+                </div>
+      </div>
+      </div>
+      <div class="card">
+              <div class="img">
+      <img src="images/genericrest.jpg" alt=""></div>
+      <div class="content">
+                <div class="title">
+      Resturant Website</div>
+      <div class="sub-title">
+      HTML, CSS and JavaScript</div>
+      <p>
+      In this project I used HTML, CSS and JavaScript, with emphasis on JavaScript to build a fully functioning ordering system</p>
+      <div class="btn">
+                  <button>View Site</button>
+                </div>
+      </div>
+      </div>
+      </div>
+      <script>
+            $(".slider").owlCarousel({
+              loop: true,
+              autoplay: true,
+              autoplayTimeout: 4000, //2000ms = 2s;
+              autoplayHoverPause: true,
+            });
+          </script>
+      
     </div>
     <br>
 </body>

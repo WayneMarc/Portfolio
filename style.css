@@ -3,7 +3,7 @@ padding: 0%;}
 .navwrapper{
     
     text-align: end;
-    background-color: rgb(26, 3, 3);
+    background-color: #e74c3c;
     padding-bottom: 3%;
     padding-top: 3%;
     background-size: cover;
@@ -46,6 +46,7 @@ padding: 0%;}
    
    
    
+   
 }
 .h2heading {
     font-size: 250%;
@@ -78,17 +79,16 @@ padding: 0%;}
     width: 80%;
     padding-left: 10%;
 }
-.portfolioWrapper {
-    
-    font-family: 'Times New Roman', Times, serif;
-    max-height: 700px;
-    margin-top: 5%;
-    padding: 10%;
-    text-align: center;
-    font-size: 1em;
-}
+
 .body {
     background-color: #edf1ed; 
+}
+.portfolioWrapper {
+    margin-top: 90%;
+    align-self: center;
+    align-content: center;
+    text-align-last: center;
+    
 }
 .buttonPortfolio {
     background: #3D94F6;
