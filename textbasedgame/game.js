@@ -74,20 +74,20 @@ const textNodes =
         text: '  quick choose a weapon',
         options: [
             {
-            text:'Yes, Ill Have the sword',
+            text:'sword',
             //requiredState: (currentState) =>currentState.Sword,
             setState:{ sword: true},
             nextText: 5
         },
-        {   text:'This Ax looks familiar I will have this',
+        {   text:'AX',
             setState:{ ax: true},
             nextText: 5
         },
-            {text:'a crossbow? I think i know how to use this',
+            {text:'Crossbow',
             setState:{crossbow: true},
             nextText:5},
 
-            {text:'I am a pacifist and Violence is never the answer',
+            {text:'no weapon',
             nextText:5},
 
         ]
@@ -114,10 +114,10 @@ const textNodes =
                     nextText: 8
                             },
                 {
-                    text: 'question 1',
+                    text: 'answer ',
                     nextText: 9
                 },
-                {   text: 'question 2',
+                {   text: 'answer',
                     nextText:10},
 
                     {   text: 'Create a diversion and escape through the corridors',
@@ -126,12 +126,12 @@ const textNodes =
                 
                             ] },        
             {id: 6,
-                 text: 'You follow him into a poorly lit library where you overhear him have a conversation with a rouge looking character, Rouge: Thekin, is that you? Do you have it with you? Thekin: The trouble I had to go through just for this stupid dagger ROUGE: That is no stupid Dagger it is the answer to Bilstonias prayers, with this "stupid Dagger" the prophecy will be fullfilled. you wouldnt understand....... and what of its previous owner? Thekin: poisoned if he ever comes around he wont even know his name. there is a large crash and it startles the men and they part ways after sharing an unusual handshake',
+                 text: 'You follow him into a poorly lit library........ ',
                  options:[
 
-                    { text:'Follow The Rouge',
+                    { text:'Follow person 1',
                     nextText:110},
-                    { text: 'Follow  Thekin ',
+                    { text: 'Follow person 2 ',
                     nextText:100},
 
                 ]
