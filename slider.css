@@ -50,12 +50,13 @@ html,body{
   text-align: justify;
   margin: 10px 0;
 }
-.card .content .btn{
+.card .content .btn .a{
   display: block;
   text-align: left;
   margin: 10px 0;
+  
 }
-.card .content .btn button{
+.card .content .btn button {
   background: #e74c3c;
   color: #fff;
   border: none;
@@ -68,4 +69,8 @@ html,body{
 }
 .card .content .btn button:hover{
   transform: scale(0.9);
+}
+.btn:visited {
+  text-decoration: none;
+  
 }
