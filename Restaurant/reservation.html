@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reststyle.css">
+    <title>Reservation</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+<body>
+    <nav>
+        <ul class="nav-flex-row">
+          <li class="nav-item">
+            <a href="restindex.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="menu.html">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a href="#shop">Shop</a>
+          </li>
+        </ul>
+    </nav>
+    
+      <section class="section-intro">
+    <form class="form" method="post" action="//submit.form" onSubmit="return validateForm();">
+        <div style="max-width: 400px;">
+        </div>
+        <div style="padding-bottom: 15px;font-size : 24px; text-align: center;">Table Reservation</div>
+        <div style="padding-bottom: 15px;font-size : 18px; text-align: center;">We would be glad to reserve a table for you at Hipsters Delight!</div>
+        <div style="padding-bottom: 15px;" >Name<span style="color: red;"> *</span><br/>
+        <input type="text" id="data_3" name="data_3" style="max-width : 90%;" class="form-control"/>
+        </div>
+        <div style="padding-bottom: 15px;">Phone<br/>
+        <input type="text" id="data_4" name="data_4" style="max-width : 90%;" class="form-control"/>
+        </div>
+        <div style="padding-bottom: 15px;">Email<br/>
+        <input type="text" id="data_5" name="data_5" style="max-width : 90%;" class="form-control"/>
+        </div>
+        <div style="padding-bottom: 15px;">Date<span style="color: red;"> *</span><br/>
+        <input type="text" id="data_6" name="data_6" style="max-width : 90%;" class="form-control"/>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.4.0/pikaday.min.js" type="text/javascript"></script>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.4.0/css/pikaday.min.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript">new Pikaday({ field: document.getElementById('data_6') });</script>
+        <div style="padding-bottom: 15px;">Time<span style="color: red;"> *</span><br/>
+        <input type="text" id="data_7" name="data_7" style="max-width : 90%;" class="form-control"/>
+        </div>
+        <div style="padding-bottom: 15px;">Number of Attendees<span style="color: red;"> *</span><br/>
+        <select id="data_8" name="data_8" style="max-width : 90%" class="form-control"><option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+        <option>7</option>
+        <option>8</option>
+        <option>9</option>
+        <option>10</option>
+        <option>10+ (Specify in Comments)</option>
+        </select>
+        </div>
+        <div style="padding-bottom: 15px;">Comments / Additional Requests<br/>
+        <textarea id="data_9" false name="data_9" style="max-width : 90%; height: 100px;" rows="6" class="form-control"></textarea>
+        </div>
+        <div><input class="button" name="skip_Submit" value="Submit" type="submit"/></div>
+        <div>
+        
+        <scripttype="text/javascript"></script>
+        </div>
+        </form>
+        
+        <script type="text/javascript">
+        function validateForm() {
+        if (isEmpty(document.getElementById('data_3').value.trim())) {
+        alert('Name is required!');
+        return false;
+        }
+        if (!validateEmail(document.getElementById('data_5').value.trim())) {
+        alert('Email must be a valid email address!');
+        return false;
+        }
+        if (isEmpty(document.getElementById('data_6').value.trim())) {
+        alert('Date is required!');
+        return false;
+        }
+        if (isEmpty(document.getElementById('data_7').value.trim())) {
+        alert('Time is required!');
+        return false;
+        }
+        return true;
+        }
+        function isEmpty(str) { return (str.length === 0 || !str.trim()); }
+        function validateEmail(email) {
+        var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,15}(?:\.[a-z]{2})?)$/i;
+        return isEmpty(email) || re.test(email);
+        }
+        </script>
+    </section>
+</body>
+</html>
