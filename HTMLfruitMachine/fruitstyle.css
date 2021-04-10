@@ -193,10 +193,10 @@ body {
   
   .light-grey
   {
-      background: #1708f0;
+      background: green;
   }
   
-  /*--BUTTONS--*/
+  
   
   .btn {
       width: 150px;
@@ -223,28 +223,27 @@ body {
   }
   
   
-  /*--NAV--*/
+
   
   
   
   .blink {
       color: white;
-      -webkit-animation-name: example; /* Chrome, Safari, Opera */
-      -webkit-animation-duration: 2s; /* Chrome, Safari, Opera */
+      -webkit-animation-name: example;
+      -webkit-animation-duration: 2s; 
       animation-name: example;
       animation-duration: 2s;
       animation-iteration-count: infinite;
-      -webkit-animation-iteration-count: infinite; /* Chrome, Safari, Opera */
+      -webkit-animation-iteration-count: infinite;
   }
   
-  /* Chrome, Safari, Opera */
+  
   @-webkit-keyframes example {
       50%   {color: red;}
       50%  {color: white;}
       50%  {color: red;}
   }
   
-  /* Standard syntax */
   @keyframes example {
       50%   {color: red;}
       50%  {color: white;}
@@ -266,7 +265,7 @@ body {
   
   .marquee span {
       display: inline-block;
-      padding-left: 100%;  /* show the marquee just outside the paragraph */
+      padding-left: 100%; 
       animation: marquee 5s linear infinite;
   }
   
@@ -283,7 +282,7 @@ body {
       
   }
   
-  /* Make it move */
+
   @keyframes marquee {
       0%   { transform: translate(0, 0); }
       100% { transform: translate(-100%, 0); }

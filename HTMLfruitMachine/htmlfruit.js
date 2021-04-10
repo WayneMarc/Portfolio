@@ -30,7 +30,7 @@ function addCredit(v)
     else
     {
         feedback.innerHTML = "you have no more money in the bank! :(";
-        //alert("you have no more money in the bank! :(");
+        
     }
 
 }
@@ -126,13 +126,13 @@ function spin()
     {
         noSound.play();
         feedback.innerHTML = "You have 0 credits, please add credits to continue";
-        //alert("You have 0 credits, please add credits to continue");
+        
     }
 
     
 }
 
-// check win
+
 function check(a,b,c)
 {
     if (a == b && b == c)
@@ -140,7 +140,7 @@ function check(a,b,c)
         feedback.innerHTML = "matching 3. 50 credits awarded! 100 points";
         bigWinSound.play();
         winSound.play();
-        //alert("matching 3 \n 50 credits awarded! \n 100 points");
+        
         addScore(100);
         winCredit(50);
 
@@ -149,7 +149,6 @@ function check(a,b,c)
     {
         feedback.innerHTML = "Matching pair. 5 credits awarded! 20 points";
         winSound.play();
-        //alert("matching 2 \n 5 credits awarded! \n 20 points");
         addScore(20);
         winCredit(5);
     }
@@ -157,7 +156,6 @@ function check(a,b,c)
     {
         feedback.innerHTML = "Matching pair. 5 credits awarded! 20 points";
         winSound.play();
-        //alert("matching 2 \n 5 credits awarded! \n 20 points");
         addScore(20);
         winCredit(5);
     }
@@ -165,7 +163,6 @@ function check(a,b,c)
     {
         feedback.innerHTML = "Matching pair. 5 credits awarded! 10 point";
         winSound.play();
-        //alert("matching 2 \n 5 credits awarded! \n 10 points");
         addScore(10);
         winCredit(5);
     }
