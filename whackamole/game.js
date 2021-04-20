@@ -51,21 +51,5 @@ function countDown() {
 }
 let countDownTimerId = setInterval(countDown, 2000)
 
-let highScores = JSON.parse(localStorage.getItem("result")) || []
-highScoresButton.addEventListener("click", result);
-function showResults() {
-  result = timer;
-  if (result < 0) {
-    result = 0;
-  }
-  qElement.innerText = "";
-  scoreArea.classList.remove("hide");
-  answerButtons.classList.add("hide");
-  scoreArea.innerHTML = `Your score is ${result}!<div id="init">Name: <input type="text" name="initials" id="initials" placeholder="Enter Your Name"><button id="save-btn" class="save-btn btn" onclick="submitScores(event)" disabled>Save</button>`;
-  username = document.getElementById("initials");
-  saveButton = document.getElementById("save-btn");
-  username.addEventListener("keyup", function() {
-    saveButton.disabled = !username.value; });
-}
 
 }
