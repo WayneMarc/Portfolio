@@ -49,7 +49,7 @@ function countDown() {
       alert('Your Score Is ' + result)
     }
 }
-let countDownTimerId = setInterval(countDown, 2000)
+let countDownTimerId = setInterval(countDown, 1000)
 
 
 }
