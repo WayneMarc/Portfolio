@@ -4,6 +4,7 @@ let creditVal = 0;
 let score = 0;
 let money = 10;
 
+
 let elem1 = document.getElementById("val1").innerHTML;
 let elem2 = document.getElementById("val2").innerHTML;
 let elem3 = document.getElementById("val3").innerHTML;
@@ -107,7 +108,7 @@ function spin()
         }, 135);
 
 
-        //stop
+        
         setTimeout(function(){
         clearInterval(reel1);
 
